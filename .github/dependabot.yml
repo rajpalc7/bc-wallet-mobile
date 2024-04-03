@@ -12,3 +12,33 @@ updates:
     groups:
       all-actions:
         patterns: [ "*" ]
+    
+  # Maintain dependencies for TypeScript and JavaScript
+  - package-ecosystem: npm
+    directory: /
+    schedule:
+      interval: daily
+
+  # Maintain dependencies for Java
+  - package-ecosystem: maven
+    directory: /
+    schedule:
+      interval: daily
+
+  # Maintain dependencies for Objective-C
+  - package-ecosystem: cocoapods
+    directory: /
+    schedule:
+      interval: daily
+
+  # Maintain dependencies for Shell scripts
+  - package-ecosystem: pip
+    directory: /
+    schedule:
+      interval: daily
+
+  # Maintain dependencies for Ruby
+  - package-ecosystem: bundler
+    directory: /
+    schedule:
+      interval: daily
