@@ -13,32 +13,29 @@ updates:
       all-actions:
         patterns: [ "*" ]
     
-  # Maintain dependencies for TypeScript and JavaScript
+  # Maintain dependencies for Vue
   - package-ecosystem: npm
-    directory: /
+    directory: /app
     schedule:
-      interval: daily
+      interval: weekly
+      day: monday
+      time: 04:00
+      timezone: Canada/Pacific
 
   # Maintain dependencies for Java
-  - package-ecosystem: maven
-    directory: /
+  - package-ecosystem: gradle
+    directory: /app/android
     schedule:
-      interval: daily
-
-  # Maintain dependencies for Objective-C
-  - package-ecosystem: cocoapods
-    directory: /
-    schedule:
-      interval: daily
-
-  # Maintain dependencies for Shell scripts
-  - package-ecosystem: pip
-    directory: /
-    schedule:
-      interval: daily
+      interval: weekly
+      day: monday
+      time: 04:00
+      timezone: Canada/Pacific
 
   # Maintain dependencies for Ruby
   - package-ecosystem: bundler
-    directory: /
+    directory: /app
     schedule:
-      interval: daily
+      interval: weekly
+      day: monday
+      time: 04:00
+      timezone: Canada/Pacific
