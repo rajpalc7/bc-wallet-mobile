@@ -13,7 +13,7 @@ updates:
       all-actions:
         patterns: [ "*" ]
     
-  # Maintain dependencies for Vue
+  # Maintain dependencies for React
   - package-ecosystem: npm
     directory: /app
     schedule:
