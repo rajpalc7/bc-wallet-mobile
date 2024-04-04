@@ -82,7 +82,7 @@
     "lodash.flatten": "4.4.0",
     "lodash.merge": "4.6.2",
     "lodash.startcase": "4.4.0",
-    "moment": "2.29.4",
+    "moment": "2.30.1",
     "query-string": "7.0.1",
     "react": "*",
     "react-i18next": "11.18.6",
