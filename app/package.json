@@ -131,7 +131,7 @@
     "@react-native/metro-config": "0.72.11",
     "@storybook/addon-actions": "5.3.21",
     "@storybook/addon-knobs": "5.3.21",
-    "@storybook/addon-links": "5.3.21",
+    "@storybook/addon-links": "8.0.6",
     "@storybook/addon-ondevice-actions": "5.3.23",
     "@storybook/addon-ondevice-knobs": "5.3.26",
     "@storybook/react-native": "5.3.27",
