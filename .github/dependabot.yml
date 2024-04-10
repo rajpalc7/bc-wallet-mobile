@@ -1,5 +1,5 @@
- # For details on how this file works refer to:
- #   - https://docs.github.com/en/code-security/dependabot/dependabot-version-updates/configuration-options-for-the-dependabot.yml-file
+# For details on how this file works refer to:
+#   - https://docs.github.com/en/code-security/dependabot/dependabot-version-updates/configuration-options-for-the-dependabot.yml-file
 version: 2
 updates:
   # Maintain dependencies for GitHub Actions
@@ -14,8 +14,8 @@ updates:
         patterns: [ "*" ]
     
   # Maintain dependencies for TypeScript and JavaScript
-  - package-ecosystem: npm
-    directory: /app
+  - package-ecosystem: "npm"
+    directory: "/"
     schedule:
       interval: "weekly"
       day: "monday"
@@ -23,8 +23,8 @@ updates:
       timezone: "Canada/Pacific"
 
   # Maintain dependencies for TypeScript and JavaScript
-  - package-ecosystem: npm
-    directory: /
+  - package-ecosystem: "npm"
+    directory: "/app"
     schedule:
       interval: "weekly"
       day: "monday"
@@ -32,17 +32,26 @@ updates:
       timezone: "Canada/Pacific"
 
   # Maintain dependencies for TypeScript and JavaScript
-  - package-ecosystem: npm
-    directory: /scripts/gpublish
+  - package-ecosystem: "npm"
+    directory: "/scripts/gpublish"
     schedule:
       interval: "weekly"
       day: "monday"
       time: "04:00"
       timezone: "Canada/Pacific"
 
-  # Maintain dependencies for Java
-  - package-ecosystem: gradle
-    directory: /app/android
+  # Maintain dependencies for Gradle
+  - package-ecosystem: "gradle"
+    directory: "/app/android"
+    schedule:
+      interval: "weekly"
+      day: "monday"
+      time: "04:00"
+      timezone: "Canada/Pacific"
+
+  # Maintain dependencies for Gradle
+  - package-ecosystem: "gradle"
+    directory: "/app/android/app"
     schedule:
       interval: "weekly"
       day: "monday"
@@ -50,8 +59,24 @@ updates:
       timezone: "Canada/Pacific"
 
   # Maintain dependencies for Ruby
-  - package-ecosystem: bundler
-    directory: /app
+  - package-ecosystem: "bundler"
+    directory: "/app"
+    schedule:
+      interval: "weekly"
+      day: "monday"
+      time: "04:00"
+      timezone: "Canada/Pacific"
+
+  # Maintain dependencies for docker images inside manifests
+  - package-ecosystem: "docker"
+    directory: "/devops/charts/loki-logstack"
+    schedule:
+      interval: "weekly"
+      day: "monday"
+      time: "04:00"
+      timezone: "Canada/Pacific"
+  - package-ecosystem: "docker"
+    directory: "devops/charts/loki-logstack/templates"
     schedule:
       interval: "weekly"
       day: "monday"
