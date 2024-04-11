@@ -23,7 +23,7 @@ updates:
       timezone: "Canada/Pacific"
     ignore:
       - dependency-name: "*"
-        update-types: ["version-update:semver-major"]
+        update-types: ["version-update:semver-major", "version-update:semver-patch"]
 
   # Maintain dependencies for TypeScript and JavaScript
   - package-ecosystem: "npm"
@@ -35,7 +35,7 @@ updates:
       timezone: "Canada/Pacific"
     ignore:
       - dependency-name: "*"
-        update-types: ["version-update:semver-major"]
+        update-types: ["version-update:semver-major", "version-update:semver-patch"]
 
   # Maintain dependencies for TypeScript and JavaScript
   - package-ecosystem: "npm"
@@ -47,7 +47,7 @@ updates:
       timezone: "Canada/Pacific"
     ignore:
       - dependency-name: "*"
-        update-types: ["version-update:semver-major"]
+        update-types: ["version-update:semver-major", "version-update:semver-patch"]
 
   # Maintain dependencies for Gradle
   - package-ecosystem: "gradle"
@@ -66,6 +66,9 @@ updates:
       day: "monday"
       time: "04:00"
       timezone: "Canada/Pacific"
+    ignore:
+      - dependency-name: "*"
+        update-types: ["version-update:semver-major"]
 
   # Maintain dependencies for Ruby
   - package-ecosystem: "bundler"
@@ -75,6 +78,9 @@ updates:
       day: "monday"
       time: "04:00"
       timezone: "Canada/Pacific"
+    ignore:
+      - dependency-name: "*"
+        update-types: ["version-update:semver-major"]
 
   # Maintain dependencies for docker images inside manifests
   - package-ecosystem: "docker"
